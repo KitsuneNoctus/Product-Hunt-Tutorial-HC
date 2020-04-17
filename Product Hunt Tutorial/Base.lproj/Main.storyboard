@@ -115,6 +115,65 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="137.18140929535232"/>
         </scene>
+        <!--Comments-->
+        <scene sceneID="PNJ-Dp-zXs">
+            <objects>
+                <viewController storyboardIdentifier="commentsView" id="AB0-7I-XIb" userLabel="Comments" customClass="CommentsViewController" customModule="Product_Hunt_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9uz-9b-Kro">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SJO-VO-IPI" userLabel="Comments Table View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="125" id="pwX-3N-hcS" customClass="CommentTableViewCell" customModule="Product_Hunt_Tutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pwX-3N-hcS" id="Lw2-Yk-Ovv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ix1-YV-ouv">
+                                                    <rect key="frame" x="15" y="15" width="345" height="95"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ix1-YV-ouv" secondAttribute="bottom" constant="15" id="Jgy-Xx-sbk"/>
+                                                <constraint firstItem="ix1-YV-ouv" firstAttribute="top" secondItem="Lw2-Yk-Ovv" secondAttribute="top" constant="15" id="KWd-iA-cTb"/>
+                                                <constraint firstAttribute="trailing" secondItem="ix1-YV-ouv" secondAttribute="trailing" constant="15" id="aQV-5F-0kx"/>
+                                                <constraint firstItem="ix1-YV-ouv" firstAttribute="leading" secondItem="Lw2-Yk-Ovv" secondAttribute="leading" constant="15" id="poM-Kf-css"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentTextView" destination="ix1-YV-ouv" id="6BL-dZ-mrD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SJO-VO-IPI" firstAttribute="leading" secondItem="c95-d5-fSR" secondAttribute="leading" id="3db-nx-MMM"/>
+                            <constraint firstItem="c95-d5-fSR" firstAttribute="trailing" secondItem="SJO-VO-IPI" secondAttribute="trailing" id="H5F-EE-jsi"/>
+                            <constraint firstItem="c95-d5-fSR" firstAttribute="bottom" secondItem="SJO-VO-IPI" secondAttribute="bottom" id="LaY-JP-goq"/>
+                            <constraint firstItem="SJO-VO-IPI" firstAttribute="top" secondItem="c95-d5-fSR" secondAttribute="top" id="ujU-Oy-DhA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c95-d5-fSR"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentsTableView" destination="SJO-VO-IPI" id="XPI-zc-tFY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vii-Ab-5b7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="137.18140929535232"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="wnH-38-HT9">
             <objects>
