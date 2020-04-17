@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="250" id="kfv-25-Ij4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="250" id="kfv-25-Ij4" customClass="PostTableViewCell" customModule="Product_Hunt_Tutorial" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kfv-25-Ij4" id="9LQ-jP-rme">
@@ -86,6 +86,13 @@
                                                 <constraint firstItem="Gxf-TP-VPq" firstAttribute="leading" secondItem="9LQ-jP-rme" secondAttribute="leadingMargin" id="xOo-yW-vWV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentsCountLabel" destination="Jcs-Qv-Rcn" id="VtT-o0-gts"/>
+                                            <outlet property="nameLabel" destination="Tr6-5Z-9gg" id="qI8-o3-bH3"/>
+                                            <outlet property="previewImageView" destination="9Pb-CD-zbR" id="pUE-Mx-tpS"/>
+                                            <outlet property="taglineLabel" destination="XJt-pN-z1a" id="aTK-k5-dNb"/>
+                                            <outlet property="votesCountLabel" destination="srY-Vz-gc6" id="bY2-E7-7rf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
